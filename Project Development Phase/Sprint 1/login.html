@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="../static/bootstrap/css/bootstrap.min.css">
+        <link rel="icon" type="image/png" href="../static/images/logo.png">
+        <link rel="stylesheet" type="text/css" href="../static/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="../static/fonts/iconic/css/material-design-iconic-font.min.css">
+        <link rel="stylesheet" type="text/css" href="../static/animate/animate.css">
+        <link rel="stylesheet" type="text/css" href="../static/css/util.css">
+	    <link rel="stylesheet" type="text/css" href="../static/css/main.css">
+        <title>Plasma Donor Application</title>
+    </head>
+    <body>
+        <div class="limiter">
+            <div class="container-login100" style="background-image: url('../static/images/image.png');background-size: contain;background-attachment: fixed;background-position: inherit;">
+                <div class="wrap-login100">
+                    <div class="msg">{{ msg }}</div>
+                    <form class="login100-form validate-form" action="/login" method="POST">
+                        <span class="login100-form-logo">
+                            <img src="../static/images/logo.png" width="70%"; height="80%">
+                        </span>
+                        <span class="login100-form-title p-b-34 p-t-27">Log in</span>
+                        <div class="wrap-input100 validate-input" data-validate = "Enter username">
+                            <input class="input100" type="text" name="username" placeholder="Username">
+                            <span class="focus-input100" data-placeholder="&#xf207;"></span>
+                        </div>
+                        <div class="wrap-input100 validate-input" data-validate="Enter password">
+                            <input class="input100" type="password" name="pass" placeholder="Password">
+                            <span class="focus-input100" data-placeholder="&#xf191;"></span>
+                        </div>
+                        <div class="container-login100-form-btn">
+                            <button type="submit" id="submit" class="login100-form-btn">Login</button>
+                        </div>
+                        <div class="text-center p-t-20 txt1">
+                            New User, want to Register ? <a class="txt1" href="/signup">Click Here !</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
