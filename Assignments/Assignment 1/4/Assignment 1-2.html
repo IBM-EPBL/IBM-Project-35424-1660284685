@@ -1,0 +1,33 @@
+import numpy as yn
+from tkinter import *
+from scipy.special import comb, perm
+import turtle
+import pandas as pd 
+
+print("Python program for demonstrating NumPy:")
+print("\n")
+a = yn.array(['Nandhini', 'Jayasri', 'Nithya'])
+print("The array is as follows:")
+print(a)
+print("Program to demonstrate scipy library")
+print("\n")
+print("To combination of 7 and 3 ")
+c = comb(7, 3, exact = False, repetition=True)
+print(c)
+root = Tk()			
+root.geometry('100x100')
+btn = Button(root, text = 'Click me !', bd = '5',command = root.destroy)
+btn.pack(side = 'top')
+root.mainloop()
+skk = turtle.Turtle()
+for i in range(4):
+	skk.forward(50)
+	skk.right(90)
+turtle.done()
+data = {'Name':['Jai', 'Princi', 'Gaurav', 'Anuj'], 
+        'Age':[27, 24, 22, 32], 
+        'Address':['Delhi', 'Kanpur', 'Allahabad', 'Kannauj'], 
+        'Qualification':['Msc', 'MA', 'MCA', 'Phd']} 
+df = pd.DataFrame(data) 
+df["Name"]= df["Name"].str.lower()
+print(df)
